@@ -1,0 +1,18 @@
+<% var typeFilter = function(x) { %>
+    <% return x["type"] === "soccer"; %>
+<% } %>
+
+<% var soccerArray = result.filter(typeFilter) %>
+<% if(soccerArray.length===0){ %>
+    <%= "No Results Found" %>
+<% }else{ %>
+    <% soccerArray.forEach(function(entry){ %>
+	<p>
+	  Type: <%= entry["type"] %>
+	  Time: <%= entry["time"] %>
+	  Number of Players: <%= entry["numplayers"] %>
+	  Location: <%= entry["address"] %>
+	</p>
+     <% }) %>
+<% } %>     
+	

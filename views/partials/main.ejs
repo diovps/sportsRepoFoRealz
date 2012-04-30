@@ -1,0 +1,55 @@
+<% var sortTime = function(a,b) { %>
+    <% return (b["numslots"]-b["numplayers"]) - (a["numslots"]-a["numplayers"]) %>
+<% } %>
+
+<% var count = 0 %>
+
+<% var timedArray = result.sort(sortTime) %>
+<% if(timedArray.length===0){ %>
+<% }else{ %>
+    <% timedArray.forEach(function(entry){ %>
+        <% var color; %>
+	<% if(count < 2) color='red'; %>
+	<% if(count >1 && count < 4) color='yellow'; %>
+	<% if(count>3 && count < 6) color = 'green'; %>
+	<% if(count>=6) color = 'blue'; %>
+        <div class="event <%= color %>">
+          <div class="event_inside event_top">
+	    <% var image; %>
+	    <% if(entry["type"]=="soccer"){ %>
+		<% image = "images/SBall.png" %>
+	    <% }else if(entry["type"]=="volleyball"){ %>
+		 <% image = "images/Vball.png" %>
+	    <% }else if(entry["type"]=="baseball"){ %>
+		 <% image = "images/BaseBall.png" %>
+	    <% }else if(entry["type"]=="basketball"){ %>
+		 <% image = "images/BBall.png" %>
+	    <% }else if(entry["type"]=="biking"){ %>
+		 <% image = "images/Bicycle.png" %>
+	    <% }else if(entry["type"]=="hiking"){ %>
+		 <% image = "images/hiking.png" %>
+	    <% }else if(entry["type"]=="frisbee"){ %>
+		 <% image = "images/Frisbee.png" %>
+	    <% }else if(entry["type"]=="football"){ %>
+		 <% image = "images/FBall.png" %>
+	    <% }else if(entry["type"]=="swimming"){ %>
+		 <% image = "images/Swim.png" %>
+	    <% }else if(entry["type"]=="tennis"){ %>
+		 <% image = "images/Tennis.png" %>
+	    <% }else{ %>
+		 <% image = "images/circle.png" %>
+	    <% } %>   
+	    <img src="<%= image %>"></div>
+	     <div class="event_inside event_bottom">	
+		  <p><%= entry["type"] %> </p>
+          	  <p><%= entry["time"] %> </p>
+           	  <p><span id="numslot<%=count %>"><%= entry["numslots"] %></span>/<%= entry["numplayers"] %> </p>
+                  <p><%= entry["address"] %> </p>
+	   	  <p class="join" id="Object<%= count %>">join</p>
+	    </div>
+	 </div>
+	 <% count++ %>
+     <% }) %>
+<% } %>
+
+

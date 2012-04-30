@@ -1,0 +1,223 @@
+/*GENERAL*/
+
+	html, body	{
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	h1, 
+	h2, 
+	h3, 
+	h4, 
+	h5, 
+	h6	{font-family: arial; margin-top: -0.1em;}
+
+	input, textarea {
+		height: 2em;
+		width: 15em;
+		margin: 0.25em;
+		font-size: 16pt;
+		padding-left: 0.5em;
+		color: rgb(150, 150, 150);
+	}
+
+	select 	{
+		height: 2.5em;
+		width: 15.7em;
+		margin: 0.25em;
+		font-size: 16pt;
+		padding-left: 0.5em;
+		color: rgb(150, 150, 150);
+	}
+
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -50px;
+		margin-left: -50px;
+	}
+
+	:focus	{
+		outline: none;
+	}
+
+/*NAVIGATION*/
+
+	.menu_bar_container	{
+		background-color: #fff;
+		height: 100%;
+		width: 10em;
+		position: fixed;
+		left: 0%;
+		top:0%;
+		z-index: 2;
+		/*border-right: 1px solid rgba(150, 150, 150, 0.75);
+		box-shadow: 0.5em 0px 6em rgba(0, 0, 0, 0.75);*/
+	}
+			
+	.menu_bar	{
+		height: 10em;
+		padding-left: 3em;
+		position: absolute;
+		top: 50%;
+		margin-top: -5em;
+		font-family: Arial;
+		font-size: 14px;
+		color: rgb(100, 100, 100);
+	}
+
+	.menu_bar p {
+		padding: 0.45em;
+		margin-left: -0.5em;
+		margin-top:0.5em;
+		margin-bottom:0.5em;
+	}
+
+	.menu_bar p:hover {
+		background-color: rgb(19, 162, 204);
+		color: #fff;
+		cursor: default;
+	}
+
+	#back 	{display: none;}
+
+	#bendy	{
+		position: absolute;
+		left: 15em;
+		top: 50%;
+		margin-top: -250px;
+	}
+
+/*SCREENS*/
+
+	.screen	{
+		height: 100%;
+		position: absolute;
+		top: 0;
+		text-align: center;
+	}
+
+	#screen_primary		{width: 200%; top: 0%;}
+	#screen_secondary	{width: 100%;	top: -100%; display: none;}
+
+	#subscreen_post, 
+	#subscreen_find, 
+	#subscreen_menu	{display: none;}
+
+	.input_field	{
+		height: 100%;
+		width: 16em;
+		position: absolute;
+		margin-left: -8em;
+	}
+
+	.position1	{left: 50%;}
+	.position2	{left: 150%;}
+	.position3	{left: 250%;}
+	.position4	{left: 350%;}
+
+	.i_f_container	{
+		width: 100%;
+		position: fixed;
+		top: 50%;
+	}
+
+	.i_f_container_2	{margin-top: -3.5em;}
+	.i_f_container_3	{margin-top: -3em;}
+	.i_f_container_4	{margin-top:;}
+
+	.btn	{
+		height: 1.3em;
+		margin: 0.25em;
+		font-size: 16pt;
+		font-family: arial;
+		padding-top: 0.5em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		padding-bottom: 0.4em;
+		color: rgb(150, 150, 150);
+	}
+
+	.btn:hover, .btn:focus	{
+		color: #eee; 
+		cursor: default;
+		background-color: rgb(19, 162, 204);
+	}
+
+	.btn_little	{
+		width: 4em; 
+		position: absolute;
+	}
+
+	.btn_big	{
+		width: 15em;
+	}
+
+	.next_position,
+	.submit	{right: -4.1em;}
+	.back_position			{left: 0em;}
+
+	/*PRIMARY SCREEN*/
+		.event_container	{
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			left: 10.5em;
+			margin-top: -5em;
+			text-align: left;
+		}
+
+		.event {
+			height: 10em;
+			width: 10em;
+			margin: 0.5em;
+			display: inline-block;
+			overflow: hidden;
+			position: relative;
+			font-family: arial;
+			font-weight: 900;
+		}
+
+		event:hover	{
+			cursor: pointer;
+		}
+
+		.event_inside	{position: absolute;}
+		
+		.event_top	{
+			height: 100%;
+			width: 100%;
+			top: 0%;
+		}
+		.event_bottom	{
+			height: 8em;
+			width: 8em;
+			padding: 1em;
+			top: 100%;
+		}
+
+		.event p:hover {cursor: default;}
+
+		.join:hover	{color: black;}
+
+		.red		{background-color: 		rgb(245, 100, 64);	color: #fff;}
+		.blue		{background-color: 		rgb(5, 155, 191);	color: #fff;}
+		.green		{background-color: 		rgb(128, 208, 140); color: #fff;}
+		.yellow		{background-color: 		rgb(255, 207, 72); 	color: #fff;}
+/*
+		.red:hover		{background-color: 	rgb(225, 80, 44);}
+		.green:hover	{background-color: 	rgb(108, 188, 120);}
+		.blue:hover		{background-color: 	rgb(19, 162, 204);}
+		.yellow:hover	{background-color: 	rgb(235, 187, 52);}
+*/
+	/*POST SCREEN*/
+		.error	{
+			background-color: rgb(245, 100, 64);
+			border: 1px solid rgb(245, 100, 64);
+			color: #fff;
+		}
+	/*FIND SCREEN*/
+		.option	{display: none;}
+	/*MENU SCREEN*/

@@ -1,0 +1,98 @@
+<!--EVENT TILES-->
+		<div class="screen" id="screen_primary">
+			<div class="event_container">
+				<%- partial('partials/main', {result:result,ObjectIds: ObjectIds}) %>
+			</div>
+		</div>
+	<!--SECONDARY SCREEN (MENU, CREATE and POST EVENTS)-->
+		<div class="screen" id="screen_secondary">
+
+			<div id="subscreen_post">
+				<div class="i_f_container i_f_container_2">
+				    <form method="post" action="/" id="firstInfo">
+					<div class="input_field position1">
+						<input id="input_gametype" placeholder="Type of game..." name="game[type]"><br>
+						<input id="input_players" placeholder="# of Players (e.g. 4)" name="game[numplayers]"><br>
+						<div class="btn btn_little next_position">next</div>
+					</div>
+					<div class="input_field position2">
+						<input id="input_time" placeholder="Time (e.g. 12:15pm)" name="game[time]"><br>
+						<input id="input_address" placeholder="Location (e.g. The Quad)" name="game[address]"><br>
+						<div class="btn btn_little submit">post</div>
+						<div class="btn btn_little back_position">back</div>
+				</form>
+					</div>
+				</div>
+			</div>
+
+			<div id="subscreen_find">
+				<div class="i_f_container i_f_container_3">
+					<div class="input_field position1">
+						<div id="findby_time_btn" class="btn btn_big">by time</div>
+						<div id="findby_gametype_btn" class="btn btn_big">by game type</div>
+						<div id="findby_location_btn" class="btn btn_big">by location</div>
+					</div>
+					<div class="input_field position2">
+						<div id="findby_gametype" class="option">
+							<select>
+								<option>game types</option>
+							</select>
+							<div class="btn btn_little back_position">back</div>
+							<div class="btn btn_little next_position">find</div>
+						</div>
+						<div id="findby_time" class="option">
+							<select>
+								<option>times</option>
+							</select>
+							<div class="btn btn_little back_position">back</div>
+							<div class="btn btn_little next_position">find</div>
+						</div>
+						<div id="findby_location" class="option">
+							<select>
+								<option>locations</option>
+							</select>
+							<div class="btn btn_little back_position">back</div>
+							<div class="btn btn_little next_position">find</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="subscreen_menu">
+				<div class="i_f_container i_f_container_3">
+					<div class="input_field position1">
+						<div id="settings_btn" class="btn btn_big ">settings</div>
+						<div id="about_btn" class="btn btn_big ">about us</div>
+						<div id="contact_btn" class="btn btn_big ">contact us</div>
+					</div>
+					<div class="input_field position2">
+						<div id="settings_screen" class="option">
+							settings
+							<div class="btn btn_little back_position">back</div>
+						</div>
+						<div id="about_screen" class="option">
+							about
+							<div class="btn btn_little back_position">back</div>
+						</div>
+						<div id="contact_screen" class="option">
+							contact
+							<div class="btn btn_little back_position">back</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--NAVIGATION-->
+		<div class="menu_bar_container">
+			<div class="menu_bar">
+				<h1 id="title1">title</h1>
+				<div id="menu_options">
+					<p id="post_event">post game</p>
+					<p id="find_event">find game</p>
+					<p id="menu">menu</p>
+				</div>
+				<p id="back">back</p>
+				<img id="bendy" src="images/bendy.png">
+			</div>
+		</div>
+

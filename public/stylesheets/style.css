@@ -1,0 +1,196 @@
+#search_input {
+	position:absolute;
+    top:50%;
+    left:6%;
+    width: 900px;
+    height: 450px;
+	text-shadow: 0px 0px 15px #000;
+	text-align: center;
+	}
+	
+
+#list_results {
+	visibility: hidden;
+	position:absolute;
+    top:40%;
+    left:3%;
+    width: 900px;
+    height: 450px;
+	text-align: center;
+	list-style-type: none;
+	}
+	
+	
+#logo {
+	position:absolute;
+    top:5%;
+    left:40%;
+    width: 900px;
+    height: 450px;
+	
+	}
+	
+	
+	
+#title {
+	visibility: hidden;
+	position:absolute;
+    top:10%;
+    left:5%;
+    width: 900px;
+    height: 450px;
+	text-align: center;
+	}
+	
+#results {
+	position:absolute;
+    top:28%;
+    left:8%;
+    width: 850px;
+    height: 450px;
+	text-align: center;
+	}
+
+	
+#search_button{
+	height: 25px;
+	width: 45px;
+	border-radius: 12px;
+	box-shadow: 0px 0px 0px #000;
+	-moz-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+#search_button:hover {
+	box-shadow: 0px 0px 15px #fff;
+	
+}
+
+
+
+#search:hover {
+	box-shadow: 0px 0px 15px #fff;
+	
+}
+
+
+
+#new_search{
+	position: absolute;
+	top:100%;
+	left: 53%;
+	height: 20px;
+	width: 80px;
+	visibility: hidden;
+	border-radius: 12px;
+	box-shadow: 0px 0px 0px #000;
+	-moz-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+#new_search:hover {
+	box-shadow: 0px 0px 15px #fff;
+	
+}
+
+
+
+
+#help_button{
+	position: absolute;
+	top:120%;
+	left: 48%;
+	height: 20px;
+	width: 70px;
+	border-radius: 12px;
+	box-shadow: 0px 0px 0px #000;
+	-moz-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+#help_button:hover {
+	box-shadow: 0px 0px 15px #fff;
+	
+}
+
+#about_button{
+	position: absolute;
+	top:120%;
+	left: 58%;
+	height: 20px;
+	width: 70px;
+	border-radius: 12px;
+	box-shadow: 0px 0px 0px #000;
+	-moz-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+#about_button:hover {
+	box-shadow: 0px 0px 15px #fff;
+	
+}
+
+#help_info{
+	visibility: hidden;
+	position: absolute;
+	top: 20%;
+	left:13%;
+}
+
+#about_info{
+	visibility: hidden;
+	position: absolute;
+	top: 20%;
+	left:20%;
+}
+
+#about_return{
+	position: absolute;
+	top:120%;
+	left: 48%;
+	height: 20px;
+	width: 70px;
+	visibility: hidden;
+	border-radius: 12px;
+	box-shadow: 0px 0px 0px #000;
+	-moz-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+#about_return:hover {
+	box-shadow: 0px 0px 15px #fff;
+	
+}
+
+#help_return{
+	position: absolute;
+	top:120%;
+	left: 58%;
+	height: 20px;
+	width: 70px;
+	visibility: hidden;
+	border-radius: 12px;
+	box-shadow: 0px 0px 0px #000;
+	-moz-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+#help_return:hover {
+	box-shadow: 0px 0px 15px #fff;
+	
+}
+#about_head{
+	text-shadow: 0px 0px 1px #000;
+}
+
+#help_head{
+	text-shadow: 0px 0px 1px #000;
+}
+
+

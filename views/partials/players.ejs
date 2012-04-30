@@ -1,0 +1,14 @@
+<% var playerSorter = function(a,b) { %>
+	<% return a["numplayers"] - b["numplayers"] %>
+<% } %>
+
+<% var sortedPlayers = result.sort(playerSorter); %>
+<% sortedPlayers.forEach(function(someGame){ %>
+	<p>
+	    Type: <%= someGame["type"] %>
+	    Time: <%= someGame["time"] %>
+	    Number of Players: <%= someGame["numplayers"] %>
+	    Location: <%= someGame["address"] %>
+	</p>
+<% }) %>
+
